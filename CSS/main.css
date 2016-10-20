@@ -1,0 +1,200 @@
+/* Media queries for xs, sm, md, and large screens */
+/* TVs, large desktops, and laptops */
+@media (min-width: 1200px) {
+    .lead {
+      font-size: 21px;
+  }
+    .navbar-header {
+}
+
+/* Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Larger phones/Small tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Main content styling */
+
+  body {
+    background-color: lightgray;
+  }
+
+  header {
+    position: center;
+}
+  
+.page-wrapper{
+	margin: 0 auto;
+	max-width: 1300px;
+  background-color: white;
+}
+/* header ------------- */
+header{
+	padding: 0;
+}
+#header-image{
+	padding: 0;
+}
+/* center header image */
+#header-image img{
+	display: block;
+  width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#top-nav {
+	height: 30px;
+	padding: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+/* horizontal links on navbar */
+#header-nav li{
+	display: block;
+	float: left;
+}
+/* end header*/
+
+
+
+
+/* main content sections - about, trailer, characters, soundtrack */
+
+  #main-content{
+	background-color: gray;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+	}
+  
+#about{
+	clear: both;
+  background-color: whitesmoke;
+  
+}
+  
+#trailer {
+    background-color: lightblue;
+  }
+#about-header{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+	border: 1px solid black;
+	height: 110px;
+	background-color: whitesmoke;
+	color: black;
+	font-size: 30px;
+}
+#about-text{
+	color: black;
+	background-color: whitesmoke;
+	border: 1px solid black;
+	height: 300px;
+  margin-bottom: 50px;
+  margin-top: 110px;
+  
+}
+
+#soundtrack-header{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+	border: 1px solid black;
+	height: 110px;
+	background-color: whitesmoke;
+	color: black;
+	font-size: 30px;
+}  
+  
+
+ 
+#trailer{
+      background-image: url(http://www.strangerthingsfilm.com/wp-content/uploads/2014/06/green-noise-300x190.jpg);
+}
+  
+  
+#trailer .embed-responsive{
+    margin: 100px 0;
+}    
+  
+#trailer-header {
+  text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+	border: 1px solid black;
+	height: 110px;
+	
+	color: black;
+	font-size: 25px;
+}  
+
+#characters{
+  background-color: whitesmoke;
+  }
+  
+
+#main-characters-header{ 
+  text-align: center;
+	vertical-align: middle;
+  horizontal-align: middle;
+	line-height: 100px;
+	border: 1px solid black;
+	height: 110px;
+	color: black;
+	font-size: 25px;
+  }
+  
+  #main-characters-luke{
+    
+  }
+  
+  #main-characters-cottonmouth{
+    
+  }
+  
+  #main-characters-misty{
+    
+  }
+  
+  #main-characters-shades{
+    
+  }
+  
+#soundtrack {
+  background-color: whitesmoke;
+} 
+
+#soundtrack-videos {
+  margin: 100px 0;
+  background-color: whitesmoke;
+}
+	
+
+/* footer ----------*/
+
+
+.footer{
+	position: relative;
+  clear: both;
+  padding: 20px;
+	color: black;
+}
+
+.footer p{
+  text-align: center;
+}
+
+/* end footer */
