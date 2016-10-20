@@ -17,11 +17,24 @@
 		
 		<!-- User CSS file -->
 		<link rel="stylesheet" href="CSS/main.css">
-		
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<!-- Google feed API -->
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	
+		<script>
+				$(document).ready(function(){
+    				$("#hide").click(function(){
+        				$("p").hide();
+    				});
+    				$("#show").click(function(){
+       				 $("p").show();
+    				});
+				});
+		</script>
+	
 	</head>
 	<body>
 		  <!--[if lt IE 8]>
@@ -35,21 +48,34 @@
 					<nav class="navbar navbar-inverse" id="top-nav">
 						<div class="container-fluid">
 							<div class="navbar-header">
-    		    		<span class="sr-only">Toggle navigation</span>
-    		   	 		<span class="icon-bar"></span>
-    		    		<span class="icon-bar"></span>
-    		    		<span class="icon-bar"></span>
+								<!-- button for nav toggling on small devices -->
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    		    			<span class="sr-only">Toggle navigation</span>
+    		   	 			<span class="icon-bar"></span>
+    		    			<span class="icon-bar"></span>
+    		    			<span class="icon-bar"></span>
+								</button>
 							</div>
-							
-							<div class="navbar">
-								<ul class ="nav nav-bar nav" id="header-nav">
-									<li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-									<li><a href="#about">About</a></li>
-									<li><a href="#trailer">Trailer</a></li>
-									<li><a href="#characters">Characters</a></li>
-									<li><a href="#soundtrack">Soundtrack</a></li>
-								</ul>
-							</div>
+							<!-- Nav links for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Trailer</a>
+                    </li>
+                    <li>
+                        <a href="#">Characters</a>
+                    </li>
+                    <li>
+                        <a href="#">Soundtrack</a>
+                    </li>
+                </ul>
+            </div>
 						</div>
 					</nav><!-- end navbar header -->
 					<!-- header photo -->
@@ -62,21 +88,26 @@
 				<div class="container" id="main-content">
 					<div class="row" id="about">
 						<section class="col-xs-12 col-md-2 col-md-push-5" id="about-header">
+							
 							<h2>
 								ABOUT
 							</h2>
 						</section>
 						
-						<section class="col-xs-12 col-md-10 col-md-pull-1" id="about-text">
+						<section class="col-xs-12 col-md-8" id="about-text">
+							<strong>
+								When a sabotaged experiment gives him super strength and unbreakable skin, Luke Cage becomes a fugitive attempting to rebuild his life in Harlem and must soon confront his past and fight a battle for the heart of his city. 
+							</strong>
+							<br></br>
+						  			
+							<button id="hide">Hide</button>
+							<button id="show">Show</button>
 							<p>
-								When a sabotaged experiment gives him super strength and unbreakable skin, Luke Cage becomes a fugitive attempting to rebuild his life in Harlem and must soon confront his past and fight a battle for the heart of his city. <br>
-								<br>
 								Mike Colter as Carl Lucas / Luke Cage:
 A former convict who was given superhuman strength and unbreakable skin, and now fights crime under the name Luke Cage. Colter read the comics and was familiar with the "very detailed, gritty" stories about Luke Cage, but was reluctant to sign on due to some of the comics' depiction of the character, saying "when I saw the tiara, all the 1970s blacksploitation stuff, I was like, 'oh my God...' But they assured me, 'that's not what we're doing, we're doing a modern day version.'"Colter ultimately signed on for Marvel's Jessica Jones, with the contingent of appearing in a solo series, without reading any scripts. Colter discussed the differences in his portrayal in the two series, saying, "You’re not always the same person around everyone you know. You go home, you hang out with your classmates from high school, at your high school reunion, and you might be a different person to them. And you might not necessarily behave the same way around your mom that you would with your wife or your boss or your fraternity brothers." In Jessica Jones, Cage was vulnerable and "in a bit of a freefall", but in Luke Cage "he’s trying to regroup and trying to figure out what’s his next move. And then the events that happen in the first few episodes get him going, they catapult him into action." On factoring in race when playing the character, Colter said, "The approach with the character for me is more about the human qualities and the things that make Luke Cage tick ... the writers have to then decide to bring in the race of the character, if there’s an angle there. But I don’t look at it as something I have to prep differently for ... it's more of an aside". Additionally, he put on 30 pounds (14 kg) of muscle for the role.
-							</p>
+							</p>	
 						</section>
-						
-					</div><!-- end about row -->
+					</div><!-- end about section -->
 					
 					<!-- trailer section -->
   				<div class="row" id="trailer">
@@ -97,12 +128,30 @@ A former convict who was given superhuman strength and unbreakable skin, and now
 							<section class="col-xs-12 col-md-2 col-md-push-5" id="main-characters-header">
 								<h2>CHARACTERS</h2>
 							</section>
-							
+						<div class="col-xs-12" id="character-wrapper">	
+						<div class="col-md-2 col-md-push-2" id="luke-headshot">
+								<img class="img-responsive" src="media/images/headshot-luke-cage.jpg" alt="Luke Cage" title="Luke Cage" style="height: 180px; width: 200px;">	
+								<h4>Luke Cage</h5>
+							</div>
+							<div class="col-md-2 col-md-push-2" id="misty-headshot">
+								<img class="img-responsive" src="media/images/headshot-misty-knite.jpg" alt="Misty Knight" title="Misty Knight" style="height: 180px; width: 200px;">	
+								<h4>Misty Knight</h5>
+							</div>
+							<div class="col-md-2 col-md-push-2" id="cottonmouth-headshot">
+								<img class="img-responsive" src="media/images/headshot-cottonmouth.jpg" alt="Cottonmouth" title="Cottonmouth" style="height: 180px; width: 200px;">	
+								<h4>Cottonmouth</h5>
+							</div>
+							<div class="col-md-2 col-md-push-2 " id="shades-headshot">
+								<img class="img-responsive" src="media/images/headshot-shades.jpg" alt="Shades" title="Shades" style="height: 180px; width: 200px;">	
+								<h4>Shades</h5>
+							</div>
+						</div>
 					</div><!-- end characters section -->
 					
 					<!-- soundtrack section -->
 					<div class="row" id="soundtrack">
 						<section class="col-xs-12 col-md-2 col-md-push-5" id="soundtrack-header">
+								<span class="topLine"></span>
 								<h2>SOUNDTRACK</h2>
 							</section>
 						<div class="col-xs-12 col-md-8" id="soundtrack-videos">
@@ -116,15 +165,17 @@ A former convict who was given superhuman strength and unbreakable skin, and now
 				
 				<footer class="footer">
 					<p>
-						Made by Jay Hardy in October 2016. WATS 3020 Final Project. Some content used from Wikipedia Luke Cage page.
+						Made by Jay Hardy. WATS 3020 Final Project. Some content used from Wikipedia Luke Cage page.
 						<a href="https://en.wikipedia.org/wiki/Luke_Cage_(TV_series)"> </a>
 					</p>
 				</footer>
 			
+				<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+   <script>window.jQuery || document.write('<script src="JS/jquery-1.11.2.js"><\/script>')</script>
 				<!-- Latest compiled and minified JavaScript -->
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 				<!-- User script file -->
-				<script src="js/main.js"></script>
+				<script src="JS/main.js"></script>
 						
 		</div>	<!-- end wrapper -->
 	</body>

@@ -4,9 +4,7 @@
     .lead {
       font-size: 21px;
   }
-    .navbar-header {
-}
-
+    
 /* Desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
@@ -37,7 +35,7 @@
 	max-width: 1300px;
   background-color: white;
 }
-/* header ------------- */
+/* header  */
 header{
 	padding: 0;
 }
@@ -52,10 +50,11 @@ header{
 	margin-left: auto;
 }
 #top-nav {
-	height: 30px;
+	background-color: black;
 	padding: 0;
 	margin-bottom: 0;
 	border-radius: 0;
+  border: 1px solid black;
 }
 /* horizontal links on navbar */
 #header-nav li{
@@ -79,53 +78,47 @@ header{
   background-size: cover;
 	}
   
+  h2 {
+    padding-top: 20px;
+  }
+/* about section*/
+  
 #about{
 	clear: both;
   background-color: whitesmoke;
-  
+  font-family: 'Oswald';
 }
   
-#trailer {
-    background-color: lightblue;
-  }
 #about-header{
 	text-align: center;
 	vertical-align: middle;
 	line-height: 100px;
-	border: 1px solid black;
 	height: 110px;
 	background-color: whitesmoke;
 	color: black;
 	font-size: 30px;
+  font-family: 'Oswald';
 }
 #about-text{
 	color: black;
 	background-color: whitesmoke;
-	border: 1px solid black;
-	height: 300px;
+	height: 350px;
   margin-bottom: 50px;
   margin-top: 110px;
-  
+  font-family: 'Oswald';
 }
-
-#soundtrack-header{
-	text-align: center;
-	vertical-align: middle;
-	line-height: 100px;
-	border: 1px solid black;
-	height: 110px;
-	background-color: whitesmoke;
-	color: black;
-	font-size: 30px;
-}  
   
+#about-text{
+    text-align: justify;
+}
+/* end about section*/
 
- 
+/* trailer section*/ 
 #trailer{
       background-image: url(http://www.strangerthingsfilm.com/wp-content/uploads/2014/06/green-noise-300x190.jpg);
 }
   
-  
+/* responsive trailer for dif size screens*/
 #trailer .embed-responsive{
     margin: 100px 0;
 }    
@@ -134,15 +127,16 @@ header{
   text-align: center;
 	vertical-align: middle;
 	line-height: 100px;
-	border: 1px solid black;
 	height: 110px;
-	
 	color: black;
 	font-size: 25px;
 }  
-
+/* end trailer section*/ 
+  
+/* chracters section*/
 #characters{
   background-color: whitesmoke;
+  font-family: 'Oswald';
   }
   
 
@@ -151,50 +145,134 @@ header{
 	vertical-align: middle;
   horizontal-align: middle;
 	line-height: 100px;
-	border: 1px solid black;
 	height: 110px;
 	color: black;
 	font-size: 25px;
   }
   
-  #main-characters-luke{
-    
-  }
+
+/* character headshot photos*/
+#luke-headshot {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;  
+}
+
+ #luke-headshot img{
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 100px;
+    display: block;
+    margin: auto;   
+}
+
+#misty-headshot {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;  
+}
+
+ #misty-headshot img{
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 100px;
+    display: block;
+    margin: auto;   
+}
+
+#cottonmouth-headshot {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;  
+}
+
+ #cottonmouth-headshot img{
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 100px;
+    display: block;
+    margin: auto;   
+}
+
+#shades-headshot {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;  
+}
+
+ #shades-headshot img{
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 100px;
+    display: block;
+    margin: auto;   
+}
   
-  #main-characters-cottonmouth{
-    
-  }
+.character-wrapper h4 {
+    font-size: 16px;
+    margin: .3em 0 .2em;
+    font-family: 'TradeGothicBold';
+}
+/* end character section*/
+
+/* soundtrack section*/  
+  #soundtrack .topLine {   
+    display: block;
+    border-top: 1px solid black;
+    width: 200px;
+    margin: 0 auto 15px;
+  }  
   
-  #main-characters-misty{
-    
-  }
+#soundtrack-header{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100px;
+	height: 110px;
+	background-color: whitesmoke;
+	color: black;
+	font-size: 30px;
+  font-family: 'Oswald';
+}  
   
-  #main-characters-shades{
-    
-  }
-  
-#soundtrack {
-  background-color: whitesmoke;
+#soundtrack-videos{
+	margin: 110px 0;
+	height: 330px;
+	overflow: scroll;
+	overflow-x: hidden;
+	list-style-type: none;
+}
+#soundtrack-videos li{
+	display: inline;
+}
+
+#soundtrack-videos iframe{
+	width: 45%;
+	height: 300px;
+	margin: 10px;
+	margin-top: 15px;
+  margin-left: 30px;
+}
+ #soundtrack {
+    background-color: whitesmoke;
+    font-family: 'Oswald';
 } 
 
 #soundtrack-videos {
   margin: 100px 0;
   background-color: whitesmoke;
 }
-	
+/* end sountrack section*/
 
-/* footer ----------*/
-
-
+/* footer */
 .footer{
 	position: relative;
   clear: both;
   padding: 20px;
 	color: black;
+  font-family: 'Oswald';
 }
 
 .footer p{
   text-align: center;
 }
-
 /* end footer */
